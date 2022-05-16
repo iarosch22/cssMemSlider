@@ -160,7 +160,10 @@ input[name="opt"] {
     background-color: red;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.5em;
+    }
     .slider {
         width: 30rem;
         height: 27rem;
@@ -180,7 +183,10 @@ input[name="opt"] {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.5em;
+    }
     .slider {
         width: 24rem;
         height: 23rem;
@@ -200,14 +206,17 @@ input[name="opt"] {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 425px) {
+    .title {
+        font-size: 1.5em;
+    }
     .slider {
-        width: 18rem;
+        width: 16rem;
         height: 14rem;
     }
     img {
-        width: 17rem;
-        height: 13rem;
+        width: 15rem;
+        height: 10rem;
     }
     .description {
         width: 100%;

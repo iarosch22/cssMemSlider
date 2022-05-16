@@ -20,16 +20,17 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 0 2% 0 2%;
+    padding: 2%;
     height: 100vh;
 }
 .slider {
-    border: 1rem solid #fff;
+    border: 0.5rem solid #fff;
+    margin-top: 1rem;
     background-color: #fff;
-    width: 80vh;
-    height: 80vh;
+    width: 35rem;
+    height: 32rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1f 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
@@ -46,14 +47,14 @@ body {
     transition: all 1s ease;
 }
 img {
-    width: 100%;
-    height: 100%;
+    width: 34rem;
+    height: 28rem;
 }
 .description {
     align-self: flex-start;
-    padding-top: 1rem;
-    font-size: 0.7rem;
-    width: 50%;
+    padding-top: 2rem;
+    font-size: 0.9rem;
+    width: 65%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -62,9 +63,9 @@ img {
     display: flex;
     margin-left: auto;
     justify-content: space-around;
-    grid-row-start: 4;
+    grid-row-start: 5;
     grid-row-end: 6;
-    grid-column-start: 4;
+    grid-column-start: 5;
     grid-column-end: 6;
     margin-top: auto;
 }
@@ -74,8 +75,9 @@ input[name="opt"] {
  }
 
 .btn {
-    width: 0.8rem;
-    height: 0.8rem;
+    border: 0.2rem solid #fff;
+    width: 0.9rem;
+    height: 0.9rem;
     margin-right: 0.2rem;
     background-color: gray;
     border-radius: 50%;
@@ -92,78 +94,128 @@ input[name="opt"] {
     opacity: 1;
 }
 #mem1:checked ~ .nav .btn1{
-    outline: 0.1rem solid black;
-    background-color: #fff;
+    background-color: red;
 }
 
 #mem2:checked ~ .item2 {
     opacity: 1;
 }
 #mem2:checked ~ .nav .btn2{
-    outline: 0.1rem solid black;
-    background-color: #fff;
+    background-color: red;
 }
 
 #mem3:checked ~ .item3 {
     opacity: 1;
 }
 #mem3:checked ~ .nav .btn3{
-    outline: 0.1rem solid black;
-    background-color: #fff;
+    background-color: red;
 }
 
 #mem4:checked ~ .item4 {
     opacity: 1;
 }
 #mem4:checked ~ .nav .btn4{
-    outline: 0.1rem solid black;
-    background-color: #fff;
+    background-color: red;
 }
 
 #mem5:checked ~ .item5 {
     opacity: 1;
 }
 #mem5:checked ~ .nav .btn5{
-    outline: 0.1rem solid black;
-    background-color: #fff;
+    background-color: red;
 }
 
 #mem6:checked ~ .item6 {
     opacity: 1;
 }
 #mem6:checked ~ .nav .btn6{
-    outline: 0.1rem solid black;
-    background-color: #fff;
+    background-color: red;
 }
 
 #mem7:checked ~ .item7 {
     opacity: 1;
 }
 #mem7:checked ~ .nav .btn7{
-    outline: 0.1rem solid black;
-    background-color: #fff;
+    background-color: red;
 }
 
 #mem8:checked ~ .item8 {
     opacity: 1;
 }
 #mem8:checked ~ .nav .btn8{
-    outline: 0.1rem solid black;
-    background-color: #fff;
+    background-color: red;
 }
 
 #mem9:checked ~ .item9 {
     opacity: 1;
 }
 #mem9:checked ~ .nav .btn9{
-    outline: 0.1rem solid black;
-    background-color: #fff;
+    background-color: red;
 }
 
 #mem10:checked ~ .item10 {
     opacity: 1;
 }
 #mem10:checked ~ .nav .btn10{
-    outline: 0.1rem solid black;
-    background-color: #fff;
+    background-color: red;
+}
+
+@media (max-width: 600px) {
+    .slider {
+        width: 30rem;
+        height: 27rem;
+    }
+    img {
+        width: 29rem;
+        height: 23rem;
+    }
+    .description {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    .nav {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        margin-bottom: 2.1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .slider {
+        width: 24rem;
+        height: 23rem;
+    }
+    img {
+        width: 23rem;
+        height: 19rem;
+    }
+    .description {
+        font-size: 0.7rem;
+        width: 100%;
+    }
+    .nav {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        margin-bottom: 2.1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .slider {
+        width: 18rem;
+        height: 14rem;
+    }
+    img {
+        width: 17rem;
+        height: 13rem;
+    }
+    .description {
+        width: 100%;
+        font-size: 0.7rem;
+    }
+    .nav {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        margin-bottom: 2.1rem;
+    }
 }
